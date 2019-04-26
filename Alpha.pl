@@ -22,13 +22,13 @@ sub Initializer {
 	my @final_output;
 	my $line;
 	my $n = "0"; 
-	my $source = "/Users/njaveed/Downloads/source.txt";
+	my $source = "<Desired file path>";
 	open (DATA, "<", $source) or die "Could not find the file $!";
 	foreach $line (<DATA>)  {   
     	chomp $line;
     	$extracter = $line; 
     	$n++; 
-		print "$n ---> \t$line\n"; 
+	print "$n ---> \t$line\n"; 
     	@input = split(" ",$extracter);
     	push (@output , Input(@input));
     
